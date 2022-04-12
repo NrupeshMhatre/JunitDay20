@@ -19,7 +19,7 @@ public class ClassMain {
 		return result;
 }
 	public boolean emailID(String teststring) {
-		String regex="[a-z \\\\. a-z]+[@][a-z]+\\\\.[a-z]{3}+\\\\.[a-z]{2}";
+		String regex="[a-z \\. a-z]+[@][a-z]+\\.[a-z]{3}+\\.[a-z]{2}";
 		Pattern p=Pattern.compile(regex);
 		Matcher mat=p.matcher(teststring);
 		boolean result=mat.find();
