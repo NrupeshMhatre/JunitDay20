@@ -19,7 +19,7 @@ public class ClassMain {
 		return result;
 }
 	public boolean emailID(String teststring) {
-		String regex="[a-z \\\\. a-z]+[@][a-z]+\\\\.[a-z]{3}+\\\\.[a-z]{2}";
+		String regex="[a-z \\. a-z]+[@][a-z]+\\.[a-z]{3}+\\.[a-z]{2}";
 		Pattern p=Pattern.compile(regex);
 		Matcher mat=p.matcher(teststring);
 		boolean result=mat.find();
@@ -27,6 +27,13 @@ public class ClassMain {
 }
 	public boolean mobileNumb(String teststring) {
 		String regex="[0-9]{2} [98]{1}[0-9]{9}";
+		Pattern p=Pattern.compile(regex);
+		Matcher mat=p.matcher(teststring);
+		boolean result=mat.find();
+		return result;
+}
+	public boolean passwodRule1(String teststring) {
+		String regex="[a-z]{1,}";
 		Pattern p=Pattern.compile(regex);
 		Matcher mat=p.matcher(teststring);
 		boolean result=mat.find();
