@@ -14,9 +14,9 @@ public class TestClass {
 		boolean result =m.validname("Nrupesh");
 		assertEquals(result,true);
 	}
-	
+	@Test
 	public void lastNAmeTest() {
-		boolean result =m.validname("Mhatre");
+		boolean result =m.lastname("Mhatre");
 		assertEquals(result,true);	
 }
 }
