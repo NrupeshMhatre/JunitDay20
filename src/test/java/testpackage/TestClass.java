@@ -36,7 +36,7 @@ public class TestClass {
 }
 	@Test
 	public void passwordRule2Test() {
-		boolean result5 =m.passwodRule2("Nrupeshmhatre");
-		assertEquals(result5,true);	
+		boolean result6 =m.passwodRule2("Nrupeshmhatre");
+		assertEquals(result6,true);	
 }
 }
