@@ -26,7 +26,7 @@ public class ClassMain {
 		return result;
 }
 	public boolean mobileNumb(String teststring) {
-		String regex="[a-z \\\\. a-z]+[@][a-z]+\\\\.[a-z]{3}+\\\\.[a-z]{2}";
+		String regex="[0-9]{2} [98]{1}[0-9]{9}";
 		Pattern p=Pattern.compile(regex);
 		Matcher mat=p.matcher(teststring);
 		boolean result=mat.find();
