@@ -12,7 +12,11 @@ public class TestClass {
 	@Test
 	public void Test() {
 		boolean result =m.validname("Nrupesh");
-		assertEquals(result,true);	
+		assertEquals(result,true);
 	}
-
+	
+	public void lastNAmeTest() {
+		boolean result =m.validname("Mhatre");
+		assertEquals(result,true);	
+}
 }

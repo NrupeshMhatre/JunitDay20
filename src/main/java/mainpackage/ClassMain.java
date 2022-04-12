@@ -11,5 +11,11 @@ public class ClassMain {
 		boolean result=mat.find();
 		return result;
 	}	
+	public boolean lastname(String teststring) {
+		String regex="[A-Z][a-z]*";
+		Pattern p=Pattern.compile(regex);
+		Matcher mat=p.matcher(teststring);
+		boolean result=mat.find();
+		return result;
 }
-
+}
