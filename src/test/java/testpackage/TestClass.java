@@ -14,17 +14,19 @@ public class TestClass {
 		boolean result =m.validname("Nrupesh");
 		assertEquals(result,true);
 	}
-	
+	@Test
 	public void lastNAmeTest() {
-		boolean result =m.validname("Mhatre");
+		boolean result =m.lastname("Mhatre");
 		assertEquals(result,true);	
 }
+	@Test
 	public void emailIDTest() {
-		boolean result =m.validname("abc.xyz@bl.com.in");
+		boolean result =m.emailID("abc.xyz@bl.com.in");
 		assertEquals(result,true);
 }
+	@Test
 	public void mobileNumberTest() {
-		boolean result =m.validname("91 9892247438");
+		boolean result =m.mobileNumb("91 9892247438");
 		assertEquals(result,true);
 }
 	
