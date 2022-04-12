@@ -34,4 +34,9 @@ public class TestClass {
 		boolean result5 =m.passwodRule1("nrupeshmhatre");
 		assertEquals(result5,true);	
 }
+	@Test
+	public void passwordRule2Test() {
+		boolean result5 =m.passwodRule2("Nrupeshmhatre");
+		assertEquals(result5,true);	
+}
 }
