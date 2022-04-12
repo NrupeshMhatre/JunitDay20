@@ -23,4 +23,8 @@ public class TestClass {
 		boolean result =m.validname("abc.xyz@bl.com.in");
 		assertEquals(result,true);
 }
+	public void mobileNumberTest() {
+		boolean result =m.validname("91 9892247438");
+		assertEquals(result,true);
+}
 }
