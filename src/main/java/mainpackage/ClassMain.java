@@ -46,4 +46,11 @@ public class ClassMain {
 		boolean result=mat.find();
 		return result;
 }
+	public boolean passwodRule3(String teststring) {
+		String regex="[A-Z]{1}[a-z]{1,}[0-9]{2}";
+		Pattern p=Pattern.compile(regex);
+		Matcher mat=p.matcher(teststring);
+		boolean result=mat.find();
+		return result;
+}
 }
