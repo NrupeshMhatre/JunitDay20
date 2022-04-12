@@ -19,4 +19,8 @@ public class TestClass {
 		boolean result =m.validname("Mhatre");
 		assertEquals(result,true);	
 }
+	public void emailIDTest() {
+		boolean result =m.validname("abc.xyz@bl.com.in");
+		assertEquals(result,true);
+}
 }
